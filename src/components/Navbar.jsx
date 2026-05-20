@@ -20,3 +20,11 @@ const Navbar = () => {
 };
 
 export default Navbar;
+<a
+  href="/resume.pdf"
+  target="_blank"
+  rel="noreferrer"
+  className="hover:text-cyan-400 transition"
+>
+  Resume
+</a>

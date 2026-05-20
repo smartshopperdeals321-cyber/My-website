@@ -28,11 +28,10 @@ const Hero = () => {
           <div className="flex gap-5 flex-wrap">
             <a
               href="/resume.pdf"
-              download
-              className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-xl font-semibold flex items-center gap-2"
+                download
+                className="px-6 py-3 rounded-xl bg-cyan-400 text-black font-semibold hover:bg-cyan-300 transition duration-300"
             >
-              <FiDownload />
-              Download Resume
+                Download Resume
             </a>
 
             <a
