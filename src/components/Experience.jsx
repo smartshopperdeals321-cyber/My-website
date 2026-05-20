@@ -4,13 +4,13 @@ const experiences = [
     company: "GannuG Ebusiness Pvt Ltd",
     duration: "Aug 2023 - Present",
     points: [
-      "Expanded vendor network from 5 to 43 vendors",
-      "Increased product portfolio from 60 to 360+ SKUs",
-      "Managed complete D2C fulfillment lifecycle",
-      "Handled logistics coordination with DTDC, BlueDart, DHL, XpressBees, ShipPrime and Shipway",
-      "Implemented COD verification and RTO reduction strategies",
-      "Managed WordPress & WooCommerce backend",
-      "Built Power BI and Excel dashboards for analytics",
+      "Expanded vendor network from 5 to 46 vendors",
+      "Scaled catalog from 60 to 450+ SKUs",
+      "Managed ecommerce fulfillment lifecycle",
+      "Handled logistics with DTDC, Delhivery, BlueDart, DHL",
+      "Implemented COD verification & RTO reduction",
+      "Managed WooCommerce backend",
+      "Built Power BI & Excel dashboards",
     ],
   },
   {
@@ -18,10 +18,9 @@ const experiences = [
     company: "GannuG Ebusiness Pvt Ltd",
     duration: "May 2023 - Jul 2023",
     points: [
-      "Assisted in inventory management",
-      "Supported order management",
-      "Vendor onboarding support",
-      "Customer support handling",
+      "Supported inventory & vendor coordination",
+      "Handled catalog operations",
+      "Assisted logistics workflow",
     ],
   },
   {
@@ -29,9 +28,9 @@ const experiences = [
     company: "Betterzilla - Cliently",
     duration: "Feb 2023 - May 2023",
     points: [
-      "Managed large datasets with 99%+ accuracy",
-      "Data cleaning and validation",
-      "Reporting and documentation",
+      "Maintained CRM accuracy",
+      "Processed large business datasets",
+      "Improved operational efficiency",
     ],
   },
 ];
@@ -40,54 +39,41 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-24 px-6 bg-[#020817]"
+      className="py-20 px-6 md:px-20 bg-[#050816]"
     >
-      <div className="max-w-6xl mx-auto">
+      <h2 className="text-4xl font-bold text-center text-cyan-400 mb-16">
+        Experience
+      </h2>
 
-        <h2 className="text-4xl font-bold text-cyan-400 mb-12">
-          Experience
-        </h2>
+      <div className="relative border-l border-cyan-500 max-w-4xl mx-auto">
+        {experiences.map((exp, index) => (
+          <div
+            key={index}
+            className="mb-12 ml-8 relative"
+          >
+            <div className="absolute w-4 h-4 bg-cyan-400 rounded-full -left-10 top-2"></div>
 
-        <div className="space-y-10">
+            <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-lg hover:scale-105 transition duration-300">
+              <h3 className="text-2xl font-semibold text-white">
+                {exp.role}
+              </h3>
 
-          {experiences.map((exp, index) => (
-            <div
-              key={index}
-              className="bg-[#0f172a] border border-cyan-500/10 rounded-3xl p-8 hover:border-cyan-400 transition"
-            >
+              <p className="text-cyan-300 mt-1">
+                {exp.company}
+              </p>
 
-              <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-5">
-                <div>
-                  <h3 className="text-2xl font-bold text-white">
-                    {exp.role}
-                  </h3>
+              <p className="text-gray-400 text-sm mb-4">
+                {exp.duration}
+              </p>
 
-                  <p className="text-cyan-400 mt-1">
-                    {exp.company}
-                  </p>
-                </div>
-
-                <p className="text-gray-400 mt-3 md:mt-0">
-                  {exp.duration}
-                </p>
-              </div>
-
-              <ul className="space-y-3 text-gray-300">
-                {exp.points.map((point, idx) => (
-                  <li
-                    key={idx}
-                    className="flex items-start gap-3"
-                  >
-                    <span className="text-cyan-400 mt-1">•</span>
-                    <span>{point}</span>
-                  </li>
+              <ul className="space-y-2 text-gray-300">
+                {exp.points.map((point, i) => (
+                  <li key={i}>• {point}</li>
                 ))}
               </ul>
-
             </div>
-          ))}
-
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );

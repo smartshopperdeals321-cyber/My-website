@@ -18,6 +18,8 @@ function App() {
       <Experience />
       <Projects />
       <Certifications />
+      <Education />
+      <Publications />
       <Contact />
       <Footer />
     </div>
@@ -25,3 +27,5 @@ function App() {
 }
 
 export default App;
+import Education from "./components/Education";
+import Publications from "./components/Publications";

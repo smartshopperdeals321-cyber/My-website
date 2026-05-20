@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="py-8 text-center bg-[#020817] border-t border-cyan-500/10">
-      <p className="text-gray-400">
+    <footer className="bg-[#050816] py-6 border-t border-white/10">
+      <div className="text-center text-gray-400">
         © 2026 Madhavan Arugolanu | Portfolio Website
-      </p>
+      </div>
     </footer>
   );
 };
