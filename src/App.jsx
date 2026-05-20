@@ -100,3 +100,14 @@ function App() {
 }
 
 export default App;
+<nav className="navbar">
+  <h1>Madhavan</h1>
+
+  <ul className="nav-links">
+    <li>Home</li>
+    <li>About</li>
+    <li>Skills</li>
+    <li>Projects</li>
+    <li>Contact</li>
+  </ul>
+</nav>
