@@ -4,43 +4,37 @@
   box-sizing: border-box;
 }
 
-body {
+.app {
   background: #0f172a;
   color: white;
-  font-family: Arial, sans-serif;
+  min-height: 100vh;
 }
-
-.app {
-  width: 100%;
-}
-
-/* HERO SECTION */
 
 .hero {
-  min-height: 100vh;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 60px;
-  background: linear-gradient(to right, #0f172a, #111827);
+  padding: 80px 10%;
+  gap: 40px;
 }
 
-.hero-content {
-  max-width: 700px;
+.hero-text {
+  flex: 1;
 }
 
-.hero h1 {
-  font-size: 64px;
+.hero-text h1 {
+  font-size: 60px;
   margin-bottom: 20px;
 }
 
-.hero h2 {
-  font-size: 28px;
+.hero-text h3 {
+  font-size: 24px;
   color: #38bdf8;
   margin-bottom: 20px;
 }
 
-.hero p {
-  font-size: 20px;
+.hero-text p {
+  font-size: 18px;
   line-height: 1.8;
   margin-bottom: 30px;
   color: #cbd5e1;
@@ -51,111 +45,69 @@ body {
   gap: 20px;
 }
 
-.btn {
+button {
   padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
   font-weight: bold;
-  transition: 0.3s;
 }
 
-.primary {
-  background: #38bdf8;
-  color: black;
-}
-
-.primary:hover {
-  background: #0ea5e9;
-}
-
-.secondary {
+button.secondary {
+  background: transparent;
   border: 2px solid #38bdf8;
-  color: #38bdf8;
+  color: white;
 }
 
-.secondary:hover {
-  background: #38bdf8;
-  color: black;
+.hero-image img {
+  width: 350px;
+  border-radius: 20px;
 }
 
-/* SECTION */
-
-.section {
-  padding: 80px 60px;
+section {
+  padding: 80px 10%;
 }
 
-.section h2 {
-  font-size: 40px;
+section h2 {
+  font-size: 36px;
   margin-bottom: 30px;
   color: #38bdf8;
 }
 
-/* SKILLS */
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.skill-card {
+.card {
   background: #1e293b;
   padding: 25px;
-  border-radius: 12px;
-  transition: 0.3s;
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
 
-.skill-card:hover {
-  transform: translateY(-5px);
-  background: #334155;
+ul {
+  list-style: none;
 }
 
-/* EXPERIENCE */
-
-.job {
-  margin-bottom: 40px;
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 12px;
-}
-
-.job h3 {
-  margin-bottom: 10px;
-  color: #38bdf8;
-}
-
-.job p {
+li {
+  margin-bottom: 12px;
   color: #cbd5e1;
-  line-height: 1.7;
 }
-
-/* CONTACT */
-
-.contact p {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-/* MOBILE */
 
 @media (max-width: 768px) {
   .hero {
-    padding: 30px;
-  }
-
-  .hero h1 {
-    font-size: 42px;
-  }
-
-  .hero h2 {
-    font-size: 22px;
-  }
-
-  .section {
-    padding: 60px 30px;
+    flex-direction: column;
+    text-align: center;
   }
 
   .buttons {
-    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .hero-image img {
+    width: 250px;
   }
 }
