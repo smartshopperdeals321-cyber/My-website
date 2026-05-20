@@ -2,76 +2,73 @@ import { FiLinkedin, FiDownload } from "react-icons/fi";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center bg-slate-950">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+  <section className="min-h-screen flex items-center bg-slate-950">
+  <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
-        <div>
-          <p className="text-cyan-400 text-xl mb-4">
-            Hello, I'm
-          </p>
+    {/* LEFT SIDE */}
+    <div>
 
-          <h1 className="text-6xl md:text-7xl font-bold leading-tight mb-6">
-            Madhavan <br />
-            Arugolanu
-          </h1>
+      <p className="text-cyan-400 text-xl mb-4">
+        Hello, I'm
+      </p>
 
-          <h2 className="text-2xl md:text-3xl font-semibold text-slate-300 mb-6">
-            E-Commerce Operations | Supply Chain | Data Analytics
-          </h2>
+      <h1 className="text-6xl md:text-7xl font-bold leading-tight mb-6">
+        Madhavan <br />
+        Arugolanu
+      </h1>
 
-          <p className="text-slate-400 text-lg leading-8 mb-8">
-            Results-driven ecommerce operations professional experienced in D2C operations,
-            logistics optimization, vendor management, WooCommerce, SEO, CRO,
-            Power BI analytics, and business scaling.
-          </p>
+      <h2 className="text-2xl md:text-3xl text-slate-300 mb-6">
+        Ecommerce Operations | Supply Chain | Data Analytics
+      </h2>
 
-          <div className="flex gap-5 flex-wrap">
-            <a
-              href="/resume.pdf"
-                download
-                className="px-6 py-3 rounded-xl bg-cyan-400 text-black font-semibold hover:bg-cyan-300 transition duration-300"
-            >
-                Download Resume
-            </a>
+      <p className="text-slate-400 text-lg leading-8 mb-8">
+        Results-driven ecommerce operations specialist experienced in
+        D2C operations, logistics optimization, vendor management,
+        analytics, WooCommerce, SEO, and business scaling.
+      </p>
 
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2"
-            >
-              <FiLinkedin />
-              LinkedIn
-            </a>
-          </div>
-        </div>
+      <div className="flex flex-wrap gap-4">
 
-        <div className="grid grid-cols-2 gap-6">
+        <a
+          href="/resume.pdf"
+          download
+          className="bg-cyan-500 hover:bg-cyan-400 px-6 py-3 rounded-xl text-black font-semibold transition"
+        >
+          Download Resume
+        </a>
 
-          <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
-            <h3 className="text-5xl font-bold text-cyan-400 mb-3">43+</h3>
-            <p className="text-slate-300">Vendors Managed</p>
-          </div>
-
-          <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
-            <h3 className="text-5xl font-bold text-cyan-400 mb-3">360+</h3>
-            <p className="text-slate-300">SKUs Scaled</p>
-          </div>
-
-          <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
-            <h3 className="text-5xl font-bold text-cyan-400 mb-3">15%</h3>
-            <p className="text-slate-300">Logistics Cost Reduction</p>
-          </div>
-
-          <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
-            <h3 className="text-5xl font-bold text-cyan-400 mb-3">99%</h3>
-            <p className="text-slate-300">Data Accuracy</p>
-          </div>
-
-        </div>
+        <a
+          href="#contact"
+          className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black px-6 py-3 rounded-xl transition"
+        >
+          Contact Me
+        </a>
 
       </div>
-    </section>
+
+    </div>
+
+    {/* RIGHT SIDE IMAGE */}
+    <div className="flex justify-center">
+
+      <div className="relative">
+
+        <div className="absolute inset-0 bg-cyan-500 blur-3xl opacity-20 rounded-full"></div>
+
+        <img
+          src={profile}
+          alt="Madhavan"
+          className="relative w-72 md:w-96 rounded-3xl border border-cyan-400 shadow-2xl object-cover"
+        />
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
   );
 };
 
 export default Hero;
+import profile from "../assets/profile.jpg";
