@@ -1,43 +1,75 @@
+import { FiLinkedin, FiDownload } from "react-icons/fi";
+
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6">
-      <div className="max-w-5xl text-center">
+    <section className="min-h-screen flex items-center bg-slate-950">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
+        <div>
+          <p className="text-cyan-400 text-xl mb-4">
+            Hello, I'm
+          </p>
 
-        <p className="text-cyan-400 text-xl mb-4">
-          Hello, I'm
-        </p>
+          <h1 className="text-6xl md:text-7xl font-bold leading-tight mb-6">
+            Madhavan <br />
+            Arugolanu
+          </h1>
 
-        <h1 className="text-6xl md:text-8xl font-extrabold mb-6">
-          Madhavan
-          <span className="text-cyan-400"> Arugolanu</span>
-        </h1>
+          <h2 className="text-2xl md:text-3xl font-semibold text-slate-300 mb-6">
+            E-Commerce Operations | Supply Chain | Data Analytics
+          </h2>
 
-        <h2 className="text-2xl md:text-4xl font-semibold text-gray-300 mb-6">
-          Ecommerce Operations | Supply Chain | Data Analytics
-        </h2>
+          <p className="text-slate-400 text-lg leading-8 mb-8">
+            Results-driven ecommerce operations professional experienced in D2C operations,
+            logistics optimization, vendor management, WooCommerce, SEO, CRO,
+            Power BI analytics, and business scaling.
+          </p>
 
-        <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-          Passionate about ecommerce operations, logistics, automation,
-          analytics, CRO, SEO, and business growth.
-        </p>
+          <div className="flex gap-5 flex-wrap">
+            <a
+              href="/resume.pdf"
+              download
+              className="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-xl font-semibold flex items-center gap-2"
+            >
+              <FiDownload />
+              Download Resume
+            </a>
 
-        <div className="mt-10 flex flex-wrap gap-4 justify-center">
-          <a
-            href="#contact"
-            className="bg-cyan-400 text-black px-8 py-4 rounded-xl font-semibold hover:scale-105 transition"
-          >
-            Contact Me
-          </a>
-
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            className="border border-cyan-400 text-cyan-400 px-8 py-4 rounded-xl hover:bg-cyan-400 hover:text-black transition"
-          >
-            LinkedIn
-          </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white px-6 py-3 rounded-xl font-semibold flex items-center gap-2"
+            >
+              <FiLinkedin />
+              LinkedIn
+            </a>
+          </div>
         </div>
+
+        <div className="grid grid-cols-2 gap-6">
+
+          <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+            <h3 className="text-5xl font-bold text-cyan-400 mb-3">43+</h3>
+            <p className="text-slate-300">Vendors Managed</p>
+          </div>
+
+          <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+            <h3 className="text-5xl font-bold text-cyan-400 mb-3">360+</h3>
+            <p className="text-slate-300">SKUs Scaled</p>
+          </div>
+
+          <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+            <h3 className="text-5xl font-bold text-cyan-400 mb-3">15%</h3>
+            <p className="text-slate-300">Logistics Cost Reduction</p>
+          </div>
+
+          <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+            <h3 className="text-5xl font-bold text-cyan-400 mb-3">99%</h3>
+            <p className="text-slate-300">Data Accuracy</p>
+          </div>
+
+        </div>
+
       </div>
     </section>
   );

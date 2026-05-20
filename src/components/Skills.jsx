@@ -1,39 +1,41 @@
 const skills = [
-  "Ecommerce Operations",
-  "Supply Chain",
-  "Data Analytics",
+  "Power BI",
+  "Advanced Excel",
+  "Google Sheets",
+  "WooCommerce",
+  "WordPress",
+  "SQL",
   "SEO",
   "CRO",
   "Vendor Management",
+  "Logistics",
+  "Supply Chain",
+  "Order Management",
+  "Data Analytics",
   "Inventory Management",
-  "Excel",
-  "Google Sheets",
-  "Power BI",
-  "ChatGPT",
-  "Automation",
+  "Payment Reconciliation",
 ];
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-24 px-6 bg-[#07101f]">
-      <div className="max-w-6xl mx-auto">
+    <section id="skills">
+      <div className="max-w-6xl mx-auto px-6">
 
-        <h2 className="text-4xl font-bold text-cyan-400 mb-12">
-          Skills
+        <h2 className="text-5xl font-bold mb-12 gradient-text">
+          Skills & Tools
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
-
+        <div className="flex flex-wrap gap-5">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="bg-[#0f172a] border border-cyan-500/10 rounded-2xl p-5 text-center hover:border-cyan-400 hover:-translate-y-2 transition"
+              className="bg-slate-900 border border-slate-700 px-6 py-4 rounded-2xl hover:border-cyan-400 hover:scale-105 transition"
             >
               {skill}
             </div>
           ))}
-
         </div>
+
       </div>
     </section>
   );
