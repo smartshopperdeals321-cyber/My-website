@@ -22,7 +22,7 @@ const Contact = () => {
         </p>
 
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/arugolanu-madhavan-6300a1151/"
           target="_blank"
           className="inline-block bg-cyan-500 hover:bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold transition"
         >
