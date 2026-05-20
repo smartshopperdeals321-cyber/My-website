@@ -3,6 +3,7 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center px-6">
       <div className="max-w-5xl text-center">
 
+
         <p className="text-cyan-400 text-xl mb-4">
           Hello, I'm
         </p>
