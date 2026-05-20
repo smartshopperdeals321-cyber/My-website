@@ -24,3 +24,6 @@ section {
 background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+body {
+  font-family: 'Inter', sans-serif;
+}
