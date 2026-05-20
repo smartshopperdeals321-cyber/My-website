@@ -1,5 +1,5 @@
 import { FiLinkedin, FiDownload } from "react-icons/fi";
-
+import profile from "../assets/profile.jpg";
 const Hero = () => {
   return (
   <section className="min-h-screen flex items-center bg-slate-950">
@@ -71,4 +71,3 @@ const Hero = () => {
 };
 
 export default Hero;
-import profile from "../assets/profile.jpg";
