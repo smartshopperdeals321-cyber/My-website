@@ -1,25 +1,43 @@
-function Certifications() {
+const certifications = [
+  "Lean Six Sigma Black Belt – Infosys Springboard",
+  "AI for Beginners – HP LIFE",
+  "Inventory Management – HP LIFE",
+  "WordPress Basics – Infosys Springboard",
+  "WooCommerce Essentials",
+  "AI Tools & ChatGPT Workshop – be10X",
+  "Power BI Course – Simplilearn",
+  "Ecommerce Listing Course – Simplilearn",
+];
+
+const Certifications = () => {
   return (
-    <section className="certifications" id="certifications">
-      <h2>Certifications</h2>
+    <section
+      id="certifications"
+      className="py-24 px-6 bg-[#020817]"
+    >
+      <div className="max-w-6xl mx-auto">
 
-      <ul>
-        <li>Lean Six Sigma Black Belt</li>
+        <h2 className="text-4xl font-bold text-cyan-400 mb-12">
+          Certifications
+        </h2>
 
-        <li>Power BI Course - Simplilearn</li>
+        <div className="grid md:grid-cols-2 gap-6">
 
-        <li>WordPress Basics - Infosys Springboard</li>
+          {certifications.map((cert, index) => (
+            <div
+              key={index}
+              className="bg-[#0f172a] p-6 rounded-2xl border border-cyan-500/10 hover:border-cyan-400 transition"
+            >
+              <p className="text-gray-300">
+                {cert}
+              </p>
+            </div>
+          ))}
 
-        <li>WooCommerce Essentials</li>
-
-        <li>AI Tools & ChatGPT Workshop - be10X</li>
-
-        <li>Ecommerce Listing Course - Simplilearn</li>
-
-        <li>Inventory Management - HP LIFE</li>
-      </ul>
+        </div>
+      </div>
     </section>
   );
-}
+};
 
 export default Certifications;

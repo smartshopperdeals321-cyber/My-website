@@ -1,45 +1,56 @@
-function Projects() {
+const projects = [
+  {
+    title: "Ecommerce Scaling Project",
+    description:
+      "Scaled vendor network from 5 to 43 vendors and expanded product catalog from 60 to 360+ SKUs.",
+  },
+  {
+    title: "RTO Reduction Strategy",
+    description:
+      "Implemented COD verification and proactive NDR calling process to improve delivery success rates.",
+  },
+  {
+    title: "SEO & CRO Optimization",
+    description:
+      "Optimized product SEO and implemented abandoned cart recovery strategies to improve conversions.",
+  },
+];
+
+const Projects = () => {
   return (
-    <section className="projects" id="projects">
-      <h2>Projects</h2>
+    <section
+      id="projects"
+      className="py-24 px-6 bg-[#07101f]"
+    >
+      <div className="max-w-6xl mx-auto">
 
-      <div className="project-card">
-        <h3>Ecommerce Scaling Project</h3>
+        <h2 className="text-4xl font-bold text-cyan-400 mb-12">
+          Projects
+        </h2>
 
-        <p>
-          Successfully scaled vendor network from 5 to 43 vendors
-          and product catalog from 60 to 360+ SKUs.
-        </p>
-      </div>
+        <div className="grid md:grid-cols-3 gap-8">
 
-      <div className="project-card">
-        <h3>RTO Reduction Strategy</h3>
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-[#0f172a] rounded-3xl p-8 border border-cyan-500/10 hover:border-cyan-400 hover:-translate-y-2 transition"
+            >
 
-        <p>
-          Implemented COD verification and proactive NDR calling
-          process to improve delivery success rates.
-        </p>
-      </div>
+              <h3 className="text-2xl font-bold mb-4 text-white">
+                {project.title}
+              </h3>
 
-      <div className="project-card">
-        <h3>SEO & CRO Optimization</h3>
+              <p className="text-gray-400 leading-relaxed">
+                {project.description}
+              </p>
 
-        <p>
-          Optimized product SEO, improved organic visibility,
-          and implemented abandoned cart recovery strategy.
-        </p>
-      </div>
+            </div>
+          ))}
 
-      <div className="project-card">
-        <h3>Power BI Analytics Dashboard</h3>
-
-        <p>
-          Built dashboards for courier performance benchmarking,
-          aging orders, SLA tracking, and operational analytics.
-        </p>
+        </div>
       </div>
     </section>
   );
-}
+};
 
 export default Projects;
