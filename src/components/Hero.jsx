@@ -73,9 +73,5 @@ const Hero = () => {
     </section>
   );
 };
-<img
-  src={profile}
-  alt="Madhavan"
-  className="w-80 rounded-3xl border border-cyan-400"
-/>
+
 export default Hero;
