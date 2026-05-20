@@ -1,39 +1,42 @@
-function Skills() {
+const skills = [
+  "Ecommerce Operations",
+  "Supply Chain",
+  "Data Analytics",
+  "SEO",
+  "CRO",
+  "Vendor Management",
+  "Inventory Management",
+  "Excel",
+  "Google Sheets",
+  "Power BI",
+  "ChatGPT",
+  "Automation",
+];
+
+const Skills = () => {
   return (
-    <section className="skills" id="skills">
-      <h2>Skills</h2>
+    <section id="skills" className="py-24 px-6 bg-[#07101f]">
+      <div className="max-w-6xl mx-auto">
 
-      <div className="skills-container">
+        <h2 className="text-4xl font-bold text-cyan-400 mb-12">
+          Skills
+        </h2>
 
-        <div>
-          <h3>Operations</h3>
-          <p>
-            Ecommerce Operations, Vendor Management,
-            Order Management, Supply Chain,
-            Logistics Coordination, Warehouse Coordination
-          </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="bg-[#0f172a] border border-cyan-500/10 rounded-2xl p-5 text-center hover:border-cyan-400 hover:-translate-y-2 transition"
+            >
+              {skill}
+            </div>
+          ))}
+
         </div>
-
-        <div>
-          <h3>Technical</h3>
-          <p>
-            SQL, Power BI, Excel, Google Sheets,
-            WordPress, WooCommerce, SEO, CRO
-          </p>
-        </div>
-
-        <div>
-          <h3>Analytics</h3>
-          <p>
-            Dashboard Creation, Reporting,
-            KPI Monitoring, Data Analysis,
-            Performance Benchmarking
-          </p>
-        </div>
-
       </div>
     </section>
   );
-}
+};
 
 export default Skills;
