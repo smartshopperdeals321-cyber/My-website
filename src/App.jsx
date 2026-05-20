@@ -1,66 +1,127 @@
 function App() {
   return (
-    <div style={{ padding: "40px", fontFamily: "Arial" }}>
-      <h1>Arugolanu Madhavan</h1>
+    <div style={{
+      fontFamily: "Arial",
+      padding: "40px",
+      backgroundColor: "#f5f5f5",
+      color: "#222",
+      lineHeight: "1.8"
+    }}>
 
-      <h2>
-        Ecommerce Operations | Supply Chain | Vendor Management | SEO | Analytics
-      </h2>
+      {/* HERO SECTION */}
+      <section style={{ marginBottom: "60px" }}>
+        <h1 style={{ fontSize: "48px", marginBottom: "10px" }}>
+          Madhavan Arugolanu
+        </h1>
 
-      <p>
-        Results-driven Ecommerce Operations Specialist with experience in
-        scaling D2C operations, logistics coordination, vendor management,
-        WooCommerce website management, SEO optimization, and performance
-        analytics.
-      </p>
+        <h2 style={{ color: "#555" }}>
+          Ecommerce Operations & Supply Chain Specialist
+        </h2>
 
-      <button>Download Resume</button>
-      <button style={{ marginLeft: "10px" }}>Contact Me</button>
+        <p style={{ maxWidth: "800px", marginTop: "20px" }}>
+          Results-driven ecommerce professional with experience in D2C operations,
+          logistics management, vendor growth, WooCommerce management,
+          SEO optimization, and supply chain coordination.
+        </p>
 
-      <hr />
+        <div style={{ marginTop: "20px" }}>
+          <a
+            href="mailto:madhavanjobplace@gmail.com"
+            style={{
+              padding: "12px 20px",
+              backgroundColor: "#000",
+              color: "#fff",
+              textDecoration: "none",
+              marginRight: "10px",
+              borderRadius: "6px"
+            }}
+          >
+            Contact Me
+          </a>
 
-      <h2>About Me</h2>
+          <a
+            href="https://www.linkedin.com/in/arugolanu-madhavan-6300a1151/"
+            target="_blank"
+            style={{
+              padding: "12px 20px",
+              backgroundColor: "#0077b5",
+              color: "#fff",
+              textDecoration: "none",
+              borderRadius: "6px"
+            }}
+          >
+            LinkedIn
+          </a>
+        </div>
+      </section>
 
-      <p>
-        Experienced in handling end-to-end ecommerce operations including
-        logistics, vendor onboarding, order fulfillment, courier coordination,
-        COD risk reduction, SEO optimization, and customer success management.
-      </p>
+      {/* ABOUT */}
+      <section style={{ marginBottom: "60px" }}>
+        <h2>About Me</h2>
 
-      <hr />
+        <p>
+          I specialize in ecommerce operations, logistics optimization,
+          vendor management, and WooCommerce website management.
+          At GannuG Ebusiness Pvt Ltd, I helped scale vendor operations
+          from 5 to 43 vendors and expanded product listings
+          from 60 to 360+ SKUs.
+        </p>
+      </section>
 
-      <h2>Skills</h2>
+      {/* SKILLS */}
+      <section style={{ marginBottom: "60px" }}>
+        <h2>Skills</h2>
 
-      <ul>
-        <li>Ecommerce Operations</li>
-        <li>Supply Chain Management</li>
-        <li>Vendor Management</li>
-        <li>WordPress & WooCommerce</li>
-        <li>SEO & CRO</li>
-        <li>Power BI</li>
-        <li>SQL</li>
-        <li>Excel & Google Sheets</li>
-      </ul>
+        <ul>
+          <li>Ecommerce Operations</li>
+          <li>Vendor Management</li>
+          <li>Supply Chain Coordination</li>
+          <li>WooCommerce & WordPress</li>
+          <li>SEO & CRO</li>
+          <li>Power BI & Excel</li>
+          <li>SQL</li>
+          <li>Logistics & Courier Coordination</li>
+        </ul>
+      </section>
 
-      <hr />
+      {/* EXPERIENCE */}
+      <section style={{ marginBottom: "60px" }}>
+        <h2>Experience</h2>
 
-      <h2>Experience</h2>
+        <h3>Lead Operations Specialist — GannuG Ebusiness Pvt Ltd</h3>
 
-      <h3>GannuG Ebusiness Pvt Ltd</h3>
+        <p>Aug 2023 – Present</p>
 
-      <p>
-        Scaled vendor base from 5 to 43 vendors and increased product catalog
-        from 60 to 450+ SKUs while managing logistics, operations, courier
-        coordination, website management, and analytics.
-      </p>
+        <ul>
+          <li>Scaled vendor network from 5 to 43 vendors</li>
+          <li>Expanded catalog from 60 to 360+ SKUs</li>
+          <li>Managed end-to-end ecommerce operations</li>
+          <li>Handled logistics and courier optimization</li>
+          <li>Managed WooCommerce backend and SEO optimization</li>
+        </ul>
+      </section>
 
-      <hr />
+      {/* CERTIFICATIONS */}
+      <section style={{ marginBottom: "60px" }}>
+        <h2>Certifications</h2>
 
-      <h2>Contact</h2>
+        <ul>
+          <li>Lean Six Sigma Black Belt</li>
+          <li>Power BI Course</li>
+          <li>WooCommerce Essentials</li>
+          <li>AI Tools & ChatGPT Workshop</li>
+        </ul>
+      </section>
 
-      <p>Email: madhavanjobplace@gmail.com</p>
+      {/* CONTACT */}
+      <section>
+        <h2>Contact</h2>
 
-      <p>Location: Andhra Pradesh, India</p>
+        <p>Email: madhavanjobplace@gmail.com</p>
+
+        <p>Location: Andhra Pradesh, India</p>
+      </section>
+
     </div>
   );
 }
