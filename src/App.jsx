@@ -14,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Competencies />
       <Skills />
       <Experience />
       <Projects />
@@ -29,3 +30,4 @@ function App() {
 export default App;
 import Education from "./components/Education";
 import Publications from "./components/Publications";
+import Competencies from "./components/Competencies";

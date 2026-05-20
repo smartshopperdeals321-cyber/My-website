@@ -10,14 +10,9 @@ const Publications = () => {
 
       <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8">
         <h3 className="text-2xl text-white font-semibold mb-4">
-          Ecommerce Operations & Supply Chain Optimization
+          Modeling and Static Modal Analysis of Lathe Bed Using Conventional and Composite 
+            Materials Using FEM - Science Direct – June 2023
         </h3>
-
-        <p className="text-gray-300">
-          Research and operational insights focused on ecommerce growth,
-          logistics optimization, vendor management, and data-driven
-          decision-making.
-        </p>
       </div>
     </section>
   );
